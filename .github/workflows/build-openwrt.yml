@@ -188,7 +188,7 @@ jobs:
         age: '1 day'
         skip-recent: 3
 
-    - name: Remove Old Releases
+    - name: Remove Old Release
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
